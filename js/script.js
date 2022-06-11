@@ -1,7 +1,6 @@
-
-
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
+const reset = document.querySelector (".reset");
 
 const jump = () => {
     mario.classList.add("jump");
@@ -28,6 +27,8 @@ const loop = setInterval(()=> {
             mario.src="./images/game-over.png";
             mario.style.width = "75px"
             mario.style.marginLeft = "50px"
+
+            reset.style.display="block"
 
             clearInterval(loop);
         }

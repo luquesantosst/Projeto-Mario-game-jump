@@ -37,6 +37,34 @@
     animation: jump 500ms ease-out;
 }
 
+.reset {
+    display: none;
+}
+
+.botao-reset {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 210px;
+    width: 100%;
+}
+
+.interiorBotao {
+    background-color: green;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    bottom: 50px;
+    border-color: blue;
+    color: aliceblue;
+    border-style: outset;
+    font-style:italic;
+}
+
+.interiorBotao:hover {
+    background-color: rgb(11, 68, 11);
+}
+
 @keyframes pipe-animation { 
     from {
         right: -80px;
